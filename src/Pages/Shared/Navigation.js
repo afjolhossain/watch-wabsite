@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
@@ -15,20 +16,15 @@ const Navigation = () => {
           >
             MODERN <span style={{ color: "#8cc2dc" }}>WATCH</span>
           </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         </div>
         <div>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <NavLink
-              style={{
-                fontSize: "20px",
-                marginRight: "10px",
-                textDecoration: "none",
-                color: "#ABB2B9 ",
-              }}
-              to="/home"
-            >
+            <NavLink className="hover-btn" to="/home">
               Home
+            </NavLink>
+            <NavLink className="hover-btn" to="/products">
+              Products
             </NavLink>
 
             <NavLink

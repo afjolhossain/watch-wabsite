@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import { Card, Col } from "react-bootstrap";
+import "./Service.css";
 
 const Service = ({ service }) => {
   const { name, image, Description, price } = service;
@@ -13,13 +14,18 @@ const Service = ({ service }) => {
           margin: "auto",
         }}
       >
-        <Card.Img variant="top" style={{ height: "250px" }} src={image} />
+        <Card.Img
+          className="image-service"
+          variant="top"
+          style={{ height: "250px" }}
+          src={image}
+        />
         <Card.Body>
           <Card.Title style={{ color: "black" }}>{name}</Card.Title>
           <Card.Text>{Description}</Card.Text>
           <Card.Text>Price: {price}</Card.Text>
         </Card.Body>
-        <Button style={{ backgroundColor: "#326298" }}>Buy Now</Button>
+        <Button className="hover-button">Buy Now</Button>
       </Card>
     </Col>
   );

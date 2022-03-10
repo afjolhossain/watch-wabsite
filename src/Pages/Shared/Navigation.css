@@ -1,0 +1,17 @@
+.hover-btn {
+  flex: 1;
+
+  color: #fff;
+  font-size: 20px;
+  padding: 0.5rem;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.hover-btn:hover,
+.hover-btn:focus {
+  background-color: #fff;
+  color: rgb(216, 39, 39);
+}

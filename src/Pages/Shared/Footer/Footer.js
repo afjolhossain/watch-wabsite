@@ -12,7 +12,6 @@ const Footer = () => {
         className="text-center"
         style={{ marginTop: "4rem", backgroundColor: "black" }}
       >
-        <Card.Header>Featured</Card.Header>
         <Card.Body>
           <Row>
             <Col

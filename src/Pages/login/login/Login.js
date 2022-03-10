@@ -32,12 +32,12 @@ const Login = () => {
           margin: "auto",
           border: "1px solid white",
           marginTop: "2rem",
-          backgroundColor: "#2C3E50 ",
+          backgroundColor: "#D58362 ",
         }}
       >
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="text-white">Email address</Form.Label>
+        <Form.Group className="mb-3 mt-4" controlId="formBasicEmail">
           <Form.Control
+            style={{ width: "80%", margin: "auto" }}
             type="email"
             name="email"
             onChange={handleOnChange}
@@ -45,8 +45,8 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label className="text-white">Password</Form.Label>
           <Form.Control
+            style={{ width: "80%", margin: "auto" }}
             type="password"
             name="password"
             placeholder="Password"
@@ -66,6 +66,13 @@ const Login = () => {
           <p>New User? Please Register</p>
         </NavLink>
       </Form>
+      {/* <lottie-player
+        src="https://assets6.lottiefiles.com/packages/lf20_gjmecwii.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player> */}
       <Footer></Footer>
     </div>
   );
