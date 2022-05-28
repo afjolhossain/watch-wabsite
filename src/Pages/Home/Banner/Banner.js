@@ -16,11 +16,14 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption
-          style={{ marginBottom: "11rem", width: "550px", textAlign: "start" }}
+          style={{
+            textAlign: "start",
+            margin: "11rem 0",
+          }}
           xs={12}
         >
-          <h1 style={{ color: "#8cc2dc", fontSize: "4rem" }}>SMART WATCHES</h1>
-          <h5>
+          <h1 style={{ color: "#8cc2dc", fontSize: "3rem" }}>SMART WATCHES</h1>
+          <h5 style={{ color: "#CACFD2 " }}>
             Raymond Weil’s Emblematic Collection, Nabucco, Makes A Strong
             Comeback This Year.
           </h5>
@@ -42,11 +45,14 @@ const Banner = () => {
           alt="Second slide"
         />
         <Carousel.Caption
-          style={{ marginBottom: "11rem", width: "550px", textAlign: "start" }}
+          style={{
+            textAlign: "start",
+            margin: "11rem 0",
+          }}
           xs={12}
         >
-          <h1 style={{ color: "white", fontSize: "4rem" }}>Breguet Watches</h1>
-          <h5 style={{ color: "#8cc2dc" }}>
+          <h1 style={{ color: "white", fontSize: "3rem" }}>Breguet Watches</h1>
+          <h5 style={{ color: "#CACFD2 " }}>
             Breguet, “Souscription No. 34/300”. Made In A Limited Edition Of 300
             Sets In The Early 1990’S.
           </h5>
@@ -67,11 +73,14 @@ const Banner = () => {
         />
 
         <Carousel.Caption
-          style={{ marginBottom: "11rem", width: "550px", textAlign: "start" }}
+          style={{
+            textAlign: "start",
+            margin: "11rem 0",
+          }}
           xs={12}
         >
-          <h1 style={{ color: "white", fontSize: "4rem" }}>U-Boat Classico</h1>
-          <h5 style={{ color: "#8cc2dc" }}>
+          <h1 style={{ color: "white", fontSize: "3rem" }}>U-Boat Classico</h1>
+          <h5 style={{ color: "#0DE3F5" }}>
             Breguet, “Souscription No. 34/300”. Made In A Limited Edition Of 300
             Sets In The Early 1990’S.
           </h5>

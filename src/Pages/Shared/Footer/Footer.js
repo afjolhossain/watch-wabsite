@@ -8,10 +8,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div>
-      <Card
-        className="text-center"
-        style={{ marginTop: "4rem", backgroundColor: "black" }}
-      >
+      <Card className="text-center" style={{ backgroundColor: "black" }}>
         <Card.Body>
           <Row>
             <Col
@@ -67,7 +64,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faPhone} /> +91 12345678
               </p>
 
-              <p>
+              <p style={{ marginLeft: "5px" }}>
                 <FontAwesomeIcon icon={faEnvelope} />
                 support@mail.com
               </p>
