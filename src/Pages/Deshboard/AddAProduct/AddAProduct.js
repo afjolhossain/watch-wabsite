@@ -14,7 +14,7 @@ const AddAProduct = () => {
 
     const newService = { name, description, price, image };
 
-    fetch("http://localhost:5000/services", {
+    fetch("https://protected-plains-81115.herokuapp.com/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",

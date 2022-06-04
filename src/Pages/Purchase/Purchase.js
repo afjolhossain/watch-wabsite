@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Typography, Grid, Container } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
 import Navigation from "../Shared/Navigation";
 import Footer from "../Shared/Footer/Footer";
@@ -10,7 +10,7 @@ const Purchase = () => {
   const [service, setService] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/services/${serviceId}`;
+    const url = `https://protected-plains-81115.herokuapp.com/services/${serviceId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setService(data));
@@ -18,22 +18,29 @@ const Purchase = () => {
   return (
     <div>
       <Navigation></Navigation>
-      <Container style={{ marginTop: "3rem" }}>
+      <Container style={{ marginTop: "2rem" }}>
         <Row>
           <Col sm={6} xs={12}>
             <img
               xs={12}
-              style={{ width: "400px" }}
+              style={{ width: "350px", marginBottom: "3rem" }}
               src={service.image}
               alt=""
             />
           </Col>
-          <Col sm={6}>
+          <Col
+            sm={6}
+            style={{
+              textAlign: "start",
+              width: "400px",
+              marginBottom: "3rem",
+              lineHeight: "1rem",
+            }}
+          >
             <Typography
               sx={{
                 fontWeight: "700px",
-                color: "#F25A12",
-                textAlign: "center",
+                color: "#20030E",
               }}
               variant="h4"
             >
@@ -41,16 +48,18 @@ const Purchase = () => {
             </Typography>
             <Typography
               sx={{
-                color: "#F0F3F4 ",
+                color: "#632835 ",
                 fontSize: "20px",
-                padding: "2rem",
-                textAlign: "statr",
+                marginTop: "1rem",
               }}
               variant="subtitle2"
             >
               Description: {service.description}
             </Typography>
-            <Typography variant="h6" style={{ color: "#ABB2B9  " }}>
+            <Typography
+              variant="h6"
+              style={{ color: "#953513", marginTop: "1rem" }}
+            >
               Price: ${service.price}
             </Typography>
             <Link to="/ordernow">

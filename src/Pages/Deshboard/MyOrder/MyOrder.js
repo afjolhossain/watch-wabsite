@@ -7,7 +7,7 @@ const MyOrder = () => {
   const email = user?.email;
 
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://protected-plains-81115.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, [orders]);
@@ -17,7 +17,7 @@ const MyOrder = () => {
     console.log(id);
     const confirm = window.confirm("Are you sure about this ?");
     if (confirm) {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`https://protected-plains-81115.herokuapp.com/orders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

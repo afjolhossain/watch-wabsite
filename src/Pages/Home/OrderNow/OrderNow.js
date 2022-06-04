@@ -13,7 +13,7 @@ const OrderNow = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/orders", {
+    fetch("https://protected-plains-81115.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -32,25 +32,27 @@ const OrderNow = () => {
   return (
     <div xs={12} columns={{ xs: 4, sm: 8, md: 12 }}>
       <Navigation></Navigation>
+      <h1 style={{ color: "black", marginTop: "2rem" }}>Order Your Product</h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
         style={{
-          border: "solid white 2px",
-
-          height: "400px",
-          width: "450px",
+          border: "solid black 2px",
+          height: "350px",
+          width: "400px",
           margin: "auto",
-          marginTop: "3rem",
+          marginTop: "1rem",
           borderRadius: "10px",
+          marginBottom: "2rem",
+          backgroundColor: "#3B1121 ",
         }}
       >
-        <h1 style={{ color: "white" }}>Order Your Product</h1>
         <input
           style={{
             width: "70%",
             height: "50px",
             borderRadius: "10px",
-            marginTop: "8px",
+            marginTop: "25px",
+            backgroundColor: "#D5DBDB ",
           }}
           defaultValue={user.displayName}
           placeholder="Your Name"
@@ -63,6 +65,7 @@ const OrderNow = () => {
             height: "50px",
             borderRadius: "10px",
             marginTop: "8px",
+            backgroundColor: "#D5DBDB ",
           }}
           defaultValue={user.email}
           placeholder="Your Email"
@@ -74,6 +77,7 @@ const OrderNow = () => {
             height: "50px",
             borderRadius: "10px",
             marginTop: "8px",
+            backgroundColor: "#D5DBDB ",
           }}
           placeholder="Address"
           defaultValue=""
@@ -85,6 +89,7 @@ const OrderNow = () => {
             height: "50px",
             borderRadius: "10px",
             marginTop: "8px",
+            backgroundColor: "#D5DBDB ",
           }}
           placeholder="Phone Number"
           defaultValue=""
@@ -96,7 +101,7 @@ const OrderNow = () => {
 
         <input
           style={{
-            width: "72%",
+            width: "70%",
             height: "50px",
             marginTop: "8px",
             borderRadius: "10px",

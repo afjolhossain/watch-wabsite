@@ -11,7 +11,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link, Outlet } from "react-router-dom";
 import { Button } from "@mui/material";
-import Banner from "../../Home/Banner/Banner";
+import Services from "../../Home/services/Services";
 
 const drawerWidth = 240;
 
@@ -113,11 +113,7 @@ const Deshboard = (props) => {
             </Typography>
           </Toolbar>
         </AppBar>
-        <Box
-          component="nav"
-          sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-          aria-label="mailbox folders"
-        >
+        <Box>
           {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
           <Drawer
             container={container}
